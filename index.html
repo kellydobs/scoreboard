@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoreboard</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>My Score Board</h1>
+    </header>
+    <main>
+      <section class="team1">
+        <h2>Team 1</h2>
+        <h3>0</h3>
+        <fieldset>
+          <input type="text" placeholder="Name" id="firstInput" />
+        </fieldset>
+
+        <fieldset>
+          <i class="add fas fa-2x fa-plus-circle" id="add1"></i>
+          <i class="subtract fas fa-2x fa-minus-circle" id="subtract1"></i>
+        </fieldset>
+      </section>
+
+      <section class="team2">
+        <h2>Team 2</h2>
+        <h3>0</h3>
+        <fieldset>
+          <input type="text" placeholder="Name" id="secondInput" />
+        </fieldset>
+
+        <fieldset>
+          <i class="add fas fa-2x fa-plus-circle" id="add2"></i>
+          <i class="subtract fas fa-2x fa-minus-circle" id="subtract2"></i>
+        </fieldset>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.ts" charset="utf-8"></script>
+    <footer style="display: flex; justify-content: center">
+      <button id="resetBtn">RESET</button>
+    </footer>
+  </body>
+</html>
